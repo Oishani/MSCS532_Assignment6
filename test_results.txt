@@ -1,0 +1,57 @@
+=== Running All Tests ===
+test_invalid_k_raises (test_deterministic_select.TestDeterministicSelect) ... [deterministic_select] input=[], k=1 → expecting ValueError
+[deterministic_select] input=[1, 2, 3], k=0 → expecting ValueError
+[deterministic_select] input=[1, 2, 3], k=4 → expecting ValueError
+ok
+test_random_input (test_deterministic_select.TestDeterministicSelect) ... [deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=1 → result=1, expected=1
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=2 → result=2, expected=2
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=3 → result=3, expected=3
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=4 → result=4, expected=4
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=5 → result=5, expected=5
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=6 → result=6, expected=6
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=7 → result=7, expected=7
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=8 → result=8, expected=8
+[deterministic_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=9 → result=9, expected=9
+ok
+test_sorted_input (test_deterministic_select.TestDeterministicSelect) ... [deterministic_select] input=[1, 2, 3, 4, 5], k=1 → result=1, expected=1
+[deterministic_select] input=[1, 2, 3, 4, 5], k=2 → result=2, expected=2
+[deterministic_select] input=[1, 2, 3, 4, 5], k=3 → result=3, expected=3
+[deterministic_select] input=[1, 2, 3, 4, 5], k=4 → result=4, expected=4
+[deterministic_select] input=[1, 2, 3, 4, 5], k=5 → result=5, expected=5
+ok
+test_with_duplicates (test_deterministic_select.TestDeterministicSelect) ... [deterministic_select] input=[5, 1, 5, 3, 5], k=1 → result=1, expected=1
+[deterministic_select] input=[5, 1, 5, 3, 5], k=2 → result=3, expected=3
+[deterministic_select] input=[5, 1, 5, 3, 5], k=3 → result=5, expected=5
+[deterministic_select] input=[5, 1, 5, 3, 5], k=5 → result=5, expected=5
+ok
+test_invalid_k_raises (test_randomized_select.TestRandomizedSelect) ... [randomized_select] input=[], k=1 → expecting ValueError
+[randomized_select] input=[1, 2, 3], k=0 → expecting ValueError
+[randomized_select] input=[1, 2, 3], k=4 → expecting ValueError
+ok
+test_random_input (test_randomized_select.TestRandomizedSelect) ... [randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=1 → result=1, expected=1
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=2 → result=2, expected=2
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=3 → result=3, expected=3
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=4 → result=4, expected=4
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=5 → result=5, expected=5
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=6 → result=6, expected=6
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=7 → result=7, expected=7
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=8 → result=8, expected=8
+[randomized_select] input=[7, 2, 5, 3, 9, 1, 4, 6, 8], k=9 → result=9, expected=9
+ok
+test_sorted_input (test_randomized_select.TestRandomizedSelect) ... [randomized_select] input=[1, 2, 3, 4, 5], k=1 → result=1, expected=1
+[randomized_select] input=[1, 2, 3, 4, 5], k=2 → result=2, expected=2
+[randomized_select] input=[1, 2, 3, 4, 5], k=3 → result=3, expected=3
+[randomized_select] input=[1, 2, 3, 4, 5], k=4 → result=4, expected=4
+[randomized_select] input=[1, 2, 3, 4, 5], k=5 → result=5, expected=5
+ok
+test_with_duplicates (test_randomized_select.TestRandomizedSelect) ... [randomized_select] input=[2, 2, 1, 3, 2], k=1 → result=1, expected=1
+[randomized_select] input=[2, 2, 1, 3, 2], k=2 → result=2, expected=2
+[randomized_select] input=[2, 2, 1, 3, 2], k=3 → result=2, expected=2
+[randomized_select] input=[2, 2, 1, 3, 2], k=4 → result=2, expected=2
+[randomized_select] input=[2, 2, 1, 3, 2], k=5 → result=3, expected=3
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
