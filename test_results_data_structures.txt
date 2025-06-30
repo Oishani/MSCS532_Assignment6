@@ -1,0 +1,8 @@
+2025-06-29 18:16:33,157 - INFO - Starting data structure tests...
+2025-06-29 18:16:33,157 - INFO - [PASS] Array basic operations
+2025-06-29 18:16:33,157 - INFO - [PASS] Matrix row and element operations
+2025-06-29 18:16:33,157 - INFO - [PASS] Stack push/pop/peek
+2025-06-29 18:16:33,157 - INFO - [PASS] Queue enqueue/dequeue/front
+2025-06-29 18:16:33,157 - INFO - [PASS] LinkedList insert/delete/traverse
+2025-06-29 18:16:33,157 - INFO - [PASS] Tree add_child/find/traverse
+2025-06-29 18:16:33,157 - INFO - Tests completed: 6/6 passed, 0 failed.
